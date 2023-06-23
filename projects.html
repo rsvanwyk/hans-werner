@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hans-Werner van Wyk</title>
+
+    <!-- Favicons (title icon) -->
+    <link href="assets/images/sa-flag.png" rel="icon">
+
+    <!-- Boxicons (desktop nav icons) -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+        rel='stylesheet'>
+
+    <!-- Bootstrap icons (mobile nav icon) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
+        rel="stylesheet" 
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" 
+        crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins" 
+        rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+        crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Mobile nav toggle button -->
+    <i class="bi bi-list d-xl-none  mobile-nav-toggle"></i>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="assets/images/portrait500x500.jpg" alt="hw-portrait" 
+                    class="img-fluid rounded-circle">
+                <h1>Hans-Werner <br> van Wyk</h1>
+            </div>
+
+            <!-- Desktop nav -->
+            <nav id="navbar" class="navbar nav-menu">
+                <ul>
+                    <li>
+                        <a href="index.html#home" class="nav-link scrollto">
+                            <i class="bx bx-home"></i><span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#about" class="nav-link scrollto">
+                            <i class="bx bx-user"></i><span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#research" class="nav-link scrollto">
+                            <i class="bx bx-file-find"></i><span>Research</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#teaching" class="nav-link scrollto">
+                            <i class="bx bx-edit"></i><span>Teaching</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#students" class="nav-link scrollto">
+                            <i class="bx bx-group"></i><span>Students</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#cv" class="nav-link scrollto">
+                            <i class="bx bx-file-blank"></i><span>CV</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact" class="nav-link scrollto">
+                            <i class="bx bx-envelope"></i><span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Social links -->
+            <div class="social-links mt-3 text-center">
+                <a href="https://www.linkedin.com/in/hans-werner-van-wyk-557a8a28" 
+                    target="_blank" class="linkedin">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://github.com/hvanwyk" target="_blank" 
+                    rel="noopener noreferrer" class="github">
+                    <i class="bx bxl-github"></i>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Project "Flow and Transport Models" -->
+        <section id="proj-flow-tran-models" class="project section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Flow and Transport Models</h2>
+                    <p class="text-muted">Collaborators: Yanzhao Cao, Song Chen, Olcay Ciftci (graduate student), Dmitry Glotov</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 pt-4">
+                        <p>During my time at Auburn, my co-authors and I have investigated two coupled flow and transport models: bioconvective flow equations used to model shallow suspensions of micro-organisms in a fluid, and variable density flow and transport equations, used to model saltwater intrusion in coastal aquifers. In both cases, variations in the concentration of the suspension/solution influence flow parameters which in turn determine the solute's spatial distribution. In [1], Yanzhao Cao, Song Chen, and I consider the well-posedness and finite element approximation of a generalized bioconvective flow model in which micro-organisms with a tendency to swim up toward the surface aggregate there and, upon reaching a critical mass, drop down under the influence of gravity, thereby creating a convective pattern observed both in nature and experiment. In [1] we consider transport, coupled with a Navier-Stokes-type equation that allows for a constitutive relation of the viscosity in terms of concentration. We show the existence and uniqueness of the weak solution of the system in two dimensions and construct numerical approximations based on the finite element method, for which we obtain error estimates. In joint work with Y. Cao, Dmitry Glotov and graduate student Olcay Ciftci (graduated in Summer 2020), we are currently investigating well-posedness, numerical approximations, and reduced order models of the variable density flow and transport equations related to saltwater intrusion. Here, salt concentration affects the coupled Darcy flow via a constitutive relation with fluid density.</p>
+                    </div>
+                    <div class="col-lg-3 pt-4">
+                        <img src="assets/images/bioconvection.jpg" class="img-fluid" alt="bioconvection">
+                    </div>
+                </div>
+                <a href="#publication" class="btn btn-link">Publications</a>
+            </div>
+        </section>
+
+        <!-- Project "Fractional Laplacian" -->
+        <section id="proj-frac-laplacian" class="project">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Fractional Laplacian</h2>
+                    <p class="text-muted">Collaborators: John Burkardt, Siwei Duo, Serge Guerngar, Max Gunzburger, Mariam Khatchatrian (graduate student), Erkan Nane, Miroslav Stoyanov, Suleyman Ulusoy, Yanzhi Zhang</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 pt-4">
+                        <p>The fractional Laplacian is a nonlocal generalization of the classical Laplacian that is often used to model diffusion processes. My interest in this operator dates back to my work on the generative models for power-law noises (see [4]), and has continued during my time at Auburn. Numerical approximations of the fractional Laplacian are challenging, due to the fact that it is nonlocal, as well the presence of a hypersingular kernel. In [3], Siwei Duo (graduate student), Yanzhi Zhang, and I developed a novel finite difference method to discretize the fractional Laplacian in hypersingular integral form. By introducing a splitting parameter, we formulated the fractional Laplacian as the weighted integral of a weak singular function, which is then approximated by the weighted trapezoidal rule. Compared to other existing methods, our method is more accurate and simpler to implement, and moreover it closely resembles the central difference scheme for the classical Laplace operator. Specifically, we obtained the same second order convergence rate under sufficient regularity, regardless of the operator's fractional power. Together with Erkan Nane, Serge Guerngar, and Suleyman Ulusoy --[10],[11] (submitted)--, we investigated the estimation of fractional spatial and temporal scales related to L\'evy processes generated by a double-fractional Laplacian. We showed that these parameters can in principal be uniquely determined and developed optimization schemes to identify them numerically from observations. In ongoing work, E. Nane, Mariam Khatchatryan (graduate student), and I are developing numerical methods to determine blow-up times in nonlinear fractional heat equations.</p>
+                    </div>
+                    <div class="col-lg-3 pt-4">
+                        <img src="assets/images/anomalous_diffusion.jpg" class="img-fluid" alt="anomalous_diffusion">
+                    </div>
+                </div>
+                <a href="#publication" class="btn btn-link">Publications</a>
+            </div>
+        </section>
+
+        <!-- Project "Statistical Sampling" -->
+        <section id="proj-stat-sampling" class="project section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Statistical Sampling</h2>
+                    <p class="text-muted">Collaborators: Max Gunzburger, Baris Kopruluoglu (graduated student), Fauziya Yakasai (graduate student)</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 pt-4">
+                        <p>In physical systems that operate under uncertain conditions, statistical sampling provides a means of obtaining information about the distribution of various physical quantities of interest related to the underlying model output, such as their means, variances or even empirical distributions. The computational cost of obtaining reliable estimates depends largely on (i) the cost of each sample simulation and on (ii) the statistical complexity of the underlying parameter space/output. The computation of a physical quantity's statistics amounts to an integration problem over the appropriate probability space. For low-complexity quantities of interest, i.e. those that depend only on a small number of random variables, there are efficient interpolative numerical quadrature methods, such as sparse grid stochastic collocation, that require only a relatively small number of samples to converge. In [13] (submitted), Max Gunzburger and I consider extensions of the well-known Chebyshev-type integration rules to incorporate the underlying probability density explicitly in the rule by modifying either the quadrature weights or nodes. As parameter complexity increases, the convergence rates of these interpolative schemes deteriorates until, for sufficiently high stochastic dimensions, the Monte Carlo method, whose convergence rate depends only on the quantity's variance, becomes the only viable sampling scheme. In ongoing work, graduate student Fauziya Yakasai and I propose a hybrid sampling scheme for high complexity systems, in which the quantity of interest is conditioned on a low dimensional approximation of the underlying parameter. Integration over the low-dimensional projected parameter space is achieved through efficient collocation methods, whereas the high dimensional conditioned integrals (with lower conditional variance) are estimated by Monte Carlo sampling, leading to overall gains in efficiency as well as means of exploiting local sample path clustering through the use of reduced order models or sensitivity-based covariates for example.</p>
+                    </div>
+                </div>
+                <a href="#publication" class="btn btn-link">Publications</a>
+            </div>
+        </section>
+
+        <!-- Project "Astronomical Spectroscopy" -->
+        <section id="proj-astro-pectroscopy" class="project">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Astronomical Spectroscopy</h2>
+                    <p class="text-muted">Collaborators: Adam Foster, Stuart Loch, Kyle Stewart (graduate student)</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 pt-4">
+                        <p>In recent years, I had the opportunity of applying my expertise in statistical sampling to the quantification of uncertainties in atomic spectra. The spectra of electromagnetic radiation emitted from distant astrophysical objects often provides the only means of obtaining information about their chemical composition, temperature, density, mass, distance, luminosity, and relative motion. These properties are inferred with reference to predictions made by the underlying atomic models that describe their atomic structure as well as various photon-emissive/absorptive atomic processes. Atomic energies, cross-sections, rates, and line intensities have been computed and measured experimentally over decades for a multitude of ions and are widely available in astrophysical databases, such as NIST or ATOMDB. However, significant discrepancies exist in the literature, which complicates the use of the resulting spectral diagnostics. Although the physical mechanisms that govern the atomic structure and -processes are theoretically well-established, modeled by the Schr\"odinger equations and associated quantum-mechanical algebraic constraints, these systems are potentially highly complex and computationally intense to solve, with many possible processes and channels contributing to the computed spectra. In joint work with atomic physicist Stuart Loch, astrophysicist Adam Foster, and graduate student Kyle Stewart, funded by NASA grant (16-APRA16-0092), we set out to establish a systematic framework for quantifying uncertainties/variations arising from (i) numerical/convergence errors, (ii) uncertainties in estimated parameters, and (iii) variations due to different modeling choices, and propagating them via collisional radiative models to uncertainties in predicted diagnostic reference values. The resulting error bars will likely help explain discrepancies in computed astrophysical predictions, provide confidence levels in measured spectra, and help determine the reliability of various spectral diagnostic quantities.</p>
+                    </div>
+                    <div class="col-lg-3 pt-4">
+                        <img src="assets/images/hitomispec.jpg" class="img-fluid" alt="hitomispec">
+                    </div>
+                </div>
+                <a href="#publication" class="btn btn-link">Publications</a>
+            </div>
+        </section>
+
+        <!-- Project "Optimization Under Uncertainty" -->
+        <section id="proj-optimization-uq" class="project section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Optimization Under Uncertainty</h2>
+                    <p class="text-muted">Collaborators: Yanzhao Cao, Somak Das, Junshan Lin, Luke Oeding</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 pt-4">
+                        <p>Questions of design and control in systems subject to uncertainty can often be formulated as deterministic optimization problems, where the quantity to be minimized is some statistic related the model output. In [2], Y. Cao, Junshan Lin, and I considered the optimal design of thin film solar cell to maximize the expected absorption of light over a range of frequencies. For the design variable, we chose the parameters that determine the statical properties of the random rough interface between the transparent conductive oxide layer and the absorptive layer. We derived a steepest descent method, constrained by the Helmholtz equation as a model for light scattering, which resulted in an optimal interface with increased average light absorption compared to currently used interfaces. Stochastic sampling often presents a significant computational bottleneck in optimization under uncertainty, especially when cost functionals and gradients are computed via Monte Carlo sampling. This can lead to slow overall convergence rates, since statistical quantities must be computed at each iteration within the optimization loop even if the optimization method itself converges fast. Stochastic optimization methods, such as the stochastic gradient method, efficiently incorporate stochastic sampling into the optimization iteration thereby improving the convergence rate. Such methods are widely used in machine learning. In [12] (submitted), Y. Cao, Somak Das (graduate student), Luke Oeding, and I analyze the convergence of the stochastic alternating least squares (SALS) method in the decomposition of random tensors. Tensors are multi-dimensional arrays that appear frequently in data science applications. Their decomposition into canonical factors, i.e. the sum of rank-one tensors, provides important insights as the components of the rank-one terms, the factors, represent meaning in the data, similar to the principal component analysis of a matrix. Unlike for matrices however, tensor decompositions can only be computed indirectly, through optimization. In [12] we prove convergence of the SALS algorithm under mild assumptions on the observed tensor samples. In ongoing work, Y. Cao, S. Das, and I are analyzying the application of AdaGrad stochastic optimization in the distributed control of parabolic heat equation.</p>
+                    </div>
+                </div>
+                <a href="#publication" class="btn btn-link">Publications</a>
+            </div>
+        </section>
+
+
+        <!--------------------------------------
+            Project template:
+                <section>:  class="section-bg" for background color
+                <div>:  class="col-lg-12"   without pic
+                        class="col-lg-9"    with pic
+                        class="col-lg-3"    for pic
+        ---------------------------------------->
+
+        <!-------------------------------
+    
+        <section id="proj-######" class="project section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>##############</h2>
+                    <p class="text-muted">Collaborators: ###########################</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 pt-4">
+                        <p>#######################################</p>
+                    </div>
+                    <div class="col-lg-3 pt-4">
+                        <img src="assets/images/#############" class="img-fluid" alt="#############">
+                    </div>
+                </div>
+                <a href="#publication" class="btn btn-link">Publications</a>
+            </div>
+        </section>
+
+        -------------------------------->
+
+
+
+        <!-- Publication Section -->
+        <section id="publication" class="publication">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Publications</h2>
+                    <a href="projects.html">Back to Projects</a>
+                </div>
+
+                <div class="pb-4">
+                    <h4>In Prepration</h4>
+                    <ul>
+                        <li>A. Foster, S. Loch, K. Stewart, H.-W. van Wyk, The Quantification of Uncertainties in Dielectronic Recombination Rates for Astrophysical Plasmas</li>
+                        <li>H.-W. van Wyk, F.Yakasa Hybrid Sampling for Uncertainty Quantification in Systems with High Dimensional Parameter Spaces</li>
+                    </ul>
+                </div>
+
+                <div class="pb-4">
+                    <h4>Under Review</h4>
+                    <ul>
+                        <li>N. Guerngar, E. Nane, S. Ulusoy, H.-W. van Wyk, A uniqueness determination of the fractional exponents in a three-parameter fractional diffusion , Chaos, Solitons and Fractals 
+                            (<a href="https://arxiv.org/abs/1810.01543" target="_blank">arXiv</a>)</li>
+                        <li>N. Guerngar, E. Nane, R. Tinaztepe, S. Ulusoy, H.-W. van Wyk, Simultaneous inversion for the fractional exponents in the space-time fractional diffusion equation ∂βtu=−(−Δ)α/2u−(−Δ)γ/2u, FCAA 
+                            (<a href="https://arxiv.org/abs/1912.01779" target="_blank">arXiv</a>)</li>
+                        <li>Y. Cao, S. Das, L. Oeding, H.-W. van Wyk, Analysis of Stochastic Gradient Descent Methods for the Decomposition of Random Tensors, SIAM Journal on Matrix Analysis 
+                            (<a href="https://arxiv.org/abs/2004.12530" target="_blank">arXiv</a>)</li>
+                        <li>J. Burkardt, M. Gunzburger, H.-W. van Wyk, Clenshaw-Curtis type rules for statistics, SIAM Journal on Scientific Computing 
+                            (<a href="https://people.sc.fsu.edu/~jburkardt/publications/vgb_2016.pdf" target="_blank">link</a>).</li>
+                    </ul>
+                </div>
+                <div class="pb-4">
+                    <h4>Published</h4>
+                    <ul>
+                        <li>Y. Cao, S. Chen, H.-W. van Wyk, Well-posedness and finite element approximation of time dependent generalized bioconvective flow, Numerical Methods for Partial Differential Equations, Wiley, 2019, 
+                            <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/num.22442" target="_blank">doi:10.1002/num.22442</a></li>
+                        <li>G. Bao, Y. Cao, J. Lin, H.-W. van Wyk, Computational optimal design of random rough surfaces in thin film solar cells, Communications in Computational Physics, 25 (2019), pp.1591--1612, 
+                            <a href="http://www.global-sci.com/intro/article_detail/cicp/12963.html" target="_blank">doi:10.4208/cicp.OA-2018-0013</a></li>
+                        <li>S. Duo, H.-W. van Wyk, Y. Zhang, A novel and accurate finite difference method for the fractional Laplacian and the fractional Poisson problem, Journal of Computational Physics, Volume 355, 15 February 2018,  
+                            <a href="https://www.sciencedirect.com/journal/journal-of-computational-physics/vol/355/suppl/C" target="_blank">doi:10.1016/j.jcp.2017.11.011</a></li>
+                        <li>H.-W. van Wyk, M. Gunzburger, J. Burkardt, M. Stoyanov, Power-law noises over general spatial domains and on non-standard meshes , SIAM/ASA Journal on Uncertainty Quantification, Volume 3, Issue 1, pp. 1-369, 2015,  
+                            <a href="https://epubs.siam.org/doi/10.1137/140985433" target="_blank">doi:10.1137/140985433</a></li>  
+                        <li>J. Borggaard, H.-W. van Wyk, Gradient-Based Estimation of Uncertain Parameters for Elliptic Partial Differential Equations, Inverse Problems 31, 065008, 2015,  
+                            <a href="https://iopscience.iop.org/article/10.1088/0266-5611/31/6/065008/meta" target="_blank">doi:10.1088/0266-5611/31/6/065008</a></li>     
+                        <li>H.-W. van Wyk, J. Borggaard, V. Nunes Sensitivity and Uncertainty Quantification of Random Distributed Parameter Systems, Mathematics in Engineering, Science and Aerospace, Vol 4, No.2, 2013</li>            
+                        <li>H.-W. van Wyk Identification of Uncertain, Spatially Varying Parameters through Multilevel Sampling, 19th IFAC World Congress, 2014</li>
+                        <li>H.-W. van Wyk, J. Borggaard, V. Nunes, Using Fr\'echet Sensitivity Analysis to Interrogate Distributed Parameters in Random Systems, Proceedings of the 2013 ACC Conference, Washington DC, June 17-19.</li>
+                        <li>J. Borggaard, H.-W. van Wyk, Optimization-Based Estimation of Random Distributed Parameters in Elliptic Partial Differential Equations, Proceedings of the 51st IEEE Conference on Decision and Control, 2012.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-------------------------------- 
+                #####  TO UPDATE   ##### 
+            --------------------------------->
+            <P>Updated June 2023</P>
+        </div>
+    </footer>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Main js -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
